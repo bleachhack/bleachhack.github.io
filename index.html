@@ -19,6 +19,19 @@
       border: 0px;
       font-family: Inconsolata;
     }
+    
+    .logText {
+      transform: translateX(10px);
+      font-size: 15px;
+      color: #718f88
+    }
+    
+    .logTitle {
+      text-align: center;
+      font-size: 30px;
+      font-weight:600;
+      color: #718f88;
+    }
 
     .video {
       position: fixed;
@@ -116,8 +129,8 @@
   <br></br>
   <p class="text" style="color: #abafcc;">Changelog:</p>
   <div class="changelog">
-    <pre style="text-align: center; font-size: 30px; font-weight:500; color: #718f88;">0.15.1:</pre>
-    <pre style="transform: translateX(10px); font-size: 14px; color: #718f88;">
+    <pre class="logTitle">0.15.1:</pre>
+    <pre class="logText">
 Fixed some modules crashing on startup if enabled
 Fixed ShaderRender crashing your game on startup if your os is in turkish
 - Fixed several potential bugs if your os is in turkish
@@ -164,6 +177,302 @@ Improved PacketFly flying
 Added Auto Updater
 
 Renamed Github repo from bleachhack-1.14 to BleachHack
+    </pre>
+    <pre class="logTitle">B15:</pre>
+    <pre class="logText">Fix Peek crash
+Remove OffhandCrash default bind
+Improved AutoTotem
+- Now doesn't put a item in your cursor when your offhand isn't empty
+- Added an override setting
+- Now checks your hotbar and swaps there if it isn't possible to go in your inventory
+AutoTool now looks through the entire inventory instead of just the hotbar
+Add AutoArmor
+Improved ClickGui
+- Added Help toggle to clickgui
+- Added the ability to change sliders with the mouse wheel 
+- Added descriptions to all modules and settings
+- Added Icons to each category
+- Added click sounds to a lot of actions in the clickgui
+- New clickgui arrows
+Fix Xray not working with sodium on 1.16 (unfixed)
+Add ClickTp
+Improved Nuker
+- Fix nuker not mining blocks when its next to nonsolid blocks
+- Added survival multi mine
+- Added a blacklist/whitelist filter
+- Added Distance sort mode
+Improved Surround
+- Make it place support blocks
+- Make it not do unnecessary rotation
+- Autocenter doesn't teleport you up in the air now
+Improved NoVelocity
+- Added Knockback and explosion toggle with velocity amount
+- Added Pushing setting with amount
+- Added Fluid setting
+- Fix Knockback zeroing your velocity
+Add RotationSnap
+Add AutoBuild
+Add a unlock button in the beacon screen
+Improved ESP
+- Added Outline and Shader mode
+- Added Seperate Box and Fill options
+- Added Box width, Fill opacity and shader width
+- Added DrawBehind setting
+Improved StorageESP
+- Added Outline and Shader mode
+- Added Seperate Box and Fill options
+- Added Box width, Fill opacity and shader width
+Added explosions to NoRender
+Improved Nametags
+- Added separate options for mobs and animals
+- Added option to show health/name independently on every type
+- Added item stack count option to items
+- Added owner and tame option to animals
+- NAMETAG ITEMS ARE BACK!!!=!=
+Fix block placing on y0 and y255
+Update Discord RPC
+Improved Step
+- Add Packet mode
+- Add Cooldown
+Added ec.me mode to Nofall
+Changed info chat text color to a lighter one
+Improved UI
+- Renames arraylist to modulelist
+- More customizable arraylist
+-- Toggleable Extra Line, Outer Line and Fill
+- Moved ChunkSize to UI
+- More organized UI
+Added Endcrystal dupe (patched)
+Improved donkey screen
+- Moved buttons to the side
+- Added a name and tooltop to each dupe
+Made fake freecam player copy items and rotation of the real player 
+Fixed tracers in 3rd person
+Improved Fullbright
+- Add configurable gamma to Fullbright
+- Fix Fullbright potion mode flickering
+Improve $friends
+Fixed zoom messing up fov on smooth mode
+Improved error messages of most commands
+Improved EntityControl
+- Added HorseJump
+- Added RotationLock 
+Fixed Killaura trying to hit multiple targets at once
+Improved block placing
+- Added 1.14 blocks to rightclickable blocks
+- Fixed it not swinging your hand when placing blocks
+Add default xray blocks
+Improved Scaffold
+- Added $scaffold command to add filter blocks
+- Added Legit mode to Tower
+- Added NoSwing
+- Added EmptyToggle
+- Added AirPlace
+Removed Normal mode from flight (static is always better)
+Added Strafe and StrafeHop modes to Speed
+New ＢｌｅａｃｈＨａｃｋ™ CrystalAura
+Improved Ambience
+- Added seperate settings for each dimension
+- Added end sky with customizable color to Sky Color
+- Added foilage color
+- Added water color
+Enable UI and RPC on the first launch
+Fix needing to refresh notebot after downloading songs
+Improved ArrowJuke
+- Added Up movement
+- Made move direction dynamic
+- Added Lookahead value
+- Adding accounting for gravity and arrow collision
+Window improvements
+- Completely new Window design
+- Made window backgrounds translucent 
+- Made windows not be able to go to less than x0 and y0
+Improved title screen
+- Proper account manager (pain)
+- Added tabs instead of buttons
+- Added access to the clickgui on the title screen
+Dropped 1.14 and 1.15 support
+Updated from 1.16.2 to 1.16.5
+    </pre>
+    <pre class="logTitle">B14.2:</pre>
+    <pre class="logText">
+Improve scaffold
+- Now places blocks in a spiral pattern instead of a big square to make it easier to place on larger modes
+- Add SafeWalk setting
+- Add Highlight setting
+- Add Tower setting
+- Add 7x7 place mode
+Improve $rbook parsing, now supports hex and octal shit
+Improved most of the "Rotate" settings in modules to support client or serverside rotate
+Fixed Freecam
+
+Updated 1.16.2-rc1 to 1.16.2
+    </pre>
+    <pre class="logTitle">B14.1:</pre>
+    <pre class="logText">
+Improve Nametags
+- Fix items always showing their name instead of only when they are renamed
+- Add Health percent option to nametags
+- Fix nametags only showing entities with already a nametag on them in 1.14
+ChestESP for itemframes now fill the entire frame when they have a map
+Added option for donkeys/llamas in CheckESP
+Fix elytrafly sinking (again)
+Fix blocks not correctly placing on cake and signs
+Fix HandProgress (thanks waste of oxigen)
+Imporve $bind:
+- Better syntax
+- Added clear command
+- Improved Output
+- Added special case for rshift/rcontrol keys
+Added a new Discord RPC
+Fix Ambience Sky Color on 1.16
+Fixed some config bugs:
+- Fixed Freecam and clickgui settings not saving
+- Fixed modules with a default bind reverting when set to NONE
+- Fixed config not scheduling a save when a bind is set
+- Config now only saves non-default settings to make it upto 90% smaller
+Added Zoom
+Fixed armor in UI not rendering the armor on 1.16+
+Fix wandering traders not being considered an animal
+Added NoKeyBlock
+Added ColorSigns
+Fixed Peek on 1.16.1
+
+Updated the 1.16.2-pre1 version to 1.16.2-rc1
+
+Internal Changes:
+Fixed a lot of string comparasions using "==" (which makes them a lot less stable than using .equals())
+Improve notebot looping logic which should make it faster and more stable
+Fix the file manager not printing the filename its saving to correctly if it catches an error
+Optimize FabricReflect to make it not reflect the same thing multiple times if it doesn't have to, to improve performance
+Replace a lot of 1 line try-catch blocks with simple null checks to make it more readable and faster?
+Fix that IO-ing to files doesn't catch and log non-IOExcetion errors, (like serialization errors)
+    </pre>
+    <pre class="logTitle">B14:</pre>
+    <pre class="logText">
+Improve Peek
+- Fix Peek lighting issues
+- Fix Peek crashing on 1.16
+- Fix Map Peek crashing with custom maps
+Add AntiHunger
+Fix Wurst compatibility
+Fix Optifine compatibility for 1.14
+Improve SpeedMine
+- Added AntiFatigue and AntiOffGround
+- Fixed Being able to instant-mine blocks with the wrong tool
+- Fixed Haste level being 1 too high
+Improve Nametags
+- Fix nametag depth on 1.15+ (thanks THEREALWWEFAN)
+- Disable items on 1.15+ to prevent item glitches (back soom:tm:)
+- Add Items to Nametags
+Fix the main menu login manager basically being impossible to use at normal resolution
+Improve nuker
+Made your head spin to the block you are looking at when you rotate server side
+Improve xray/nuker command
+Modules, settings, and binds are now stored in 1 json file
+Made A LOT of clickgui changes
+- Fixed the clickgui size slider not working
+- Added color settings
+- Added subsettings
+Fix potential dispenser32k crash
+Improved ESP and Tracers
+- Made ESP and tracer colors customizable
+- Entities now doesn't change their team color after they are detected on esp
+Added sky and cloud color settings to Ambience
+Improve InventoryWalk
+- Added NCP Bypass
+- Added Rotation option
+-- Added Pitch Limit setting
+-- Added Anti-Spinbot bypass
+Improve Crystalaura (now actually works good)
+Add Trajectories
+Improve AutoTool
+- Added Switch Back and DurabilitySave options
+Fix Nuker NoParicles
+Add BetterPortal
+Improve NoRender
+- Added NoRender Totem, Elder Guardian, Maps and Skylight options
+Add ec.me flight mode
+Fix Freecam block collision
+Improved UI
+- Watermark now shows when arraylist is off
+- Made playerlist look better and fixed that it didn't show if the arraylist is off
+- Make timestamp shorter and customizable
+- Move the server to the info list
+- Shortened info mode text
+- Added armor durability settings
+Make config files only save when necessary to avoid lag spikes from saving config
+Added descriptions to a lot of module settings
+    </pre>
+    <pre class="logTitle">B13.2:</pre>
+    <pre class="logText">
+Added NoRender
+Added HandProgress (WIP)
+Logins are no longer stored in plaintext
+Added update link when client is outdated
+Add a search field option to clickgui
+Discord RPC text is now saved
+Fixed Map Peek not working on 1.14
+Started on adding descriptions to settings
+- All new modules will have setting descriptions
+  and the old ones will have next update
+Improve Crystalaura
+Improve all block placing
+Fix modules being toggled when F3 is down
+Fix NoVelocity when in dev workspace
+Fix BowBot not shooting at 1.0 charge
+The state of the main menu is now saved
+EltryFly normal mode now doesn't go forward without pressing "w"
+Added Surround
+Add CustomChat and $customchat
+- Add CustomFont
+- Add Prefix and suffix
+- Added AutoGG and AutoEz
+Fix 1.14 clickgui saying its 1.15
+
+Updated 20w28a version to 20w29a
+    </pre>
+    <pre class="logTitle">B13.1:</pre>
+    <pre class="logText">
+???
+    </pre>
+    <pre class="logTitle">B13:</pre>
+    <pre class="logText">
+Changed the command prefix to "$"
+Better command output formatting
+Improved ChunkSize for 1.16
+Added Dispenser32k
+Better $help command
+Fix having to doubleclick clickgui windows to move them
+Add Mountbypass
+Better ChestESP
+- Bounding box correctly size for chests and echests
+- Connected chests now join smoothly
+Clickgui now shows the currect commadn prefix
+Fix bug that crashes notebot when importing "pling" notes
+New notebot tutorial
+Fix notebot only autoplaying if loop was enabled
+Fix gui lighthing glitches
+Fix autototem
+Added "$give preset eggs"
+Improved Fastuse
+- Added "only throwables" option
+- Added "only xp bottles" option
+Improve Freecam
+- Now works while riding and doesn't dismount you
+Add timer
+Fixed a bug with speedhack
+Improved NoSlow
+- Added an "items" option
+- Added an "inventory" option
+Add AutoRespawn (credit Monsturtruc#9164)
+Add a friend system
+- Added a $friends command
+- Added MouseFriend
+- Implemented friends in ESP
+- Implemented friends in Killaura
+- Implemented friends in Tracers
+Updated the 1.16.1 version to 20w28a
     </pre>
   </div>
 </body>
