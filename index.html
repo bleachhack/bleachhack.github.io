@@ -2,67 +2,146 @@
 <html>
 
 <head>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<title>download bleachhack pls</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:300">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:500">
-	<style>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>download bleachhack pls</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:300">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:500,700">
 
-	body {
-		background-color: black;
-		text-align: center;
-	}
-	
-	.video {
-		position: fixed;
-		right: 0%;
-		bottom: 0%;
-		min-width: 100%;
-		min-height: 100%;
-		opacity: 0.5;
-		z-index: -1;
-	}
-	
-	.button1 {
-		color: white;
-		background-image: linear-gradient(45deg, #6060c0, #8070a0);
-		border: 0px;
-		border-radius: 2px;
-		box-shadow: 2px 2px 4px #8070a0;
-		font: 40px Lexend;
-		cursor: pointer;
-		transition-duration: 0.3s;
-	}
-	
-	.button1:hover {
-		border-radius: 6px;
-		box-shadow: 4px 4px 6px #8070a0;
-		color: #CDF8FF;
-	}
-	
-	.title {
-		font: 70px Raleway;
-		text-shadow: 4px 4px 2px #000000;
-	}
-	
-	.text {
-		font: 35px Raleway;
-		text-shadow: 2px 2px 1px #000000;
-	}
-	</style>
+  <style>
+    body {
+      background-color: black;
+      text-align: center;
+    }
+    
+    pre {
+      background-color: transparent;
+      border: 0px;
+      text-shadow: 1px 1px #000000;
+    }
+
+    .video {
+      position: fixed;
+      min-width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.5;
+      z-index: -1;
+    }
+
+    .button1 {
+      color: white;
+      background-image: linear-gradient(45deg, #6060c0, #8070a0);
+      border: 0px;
+      border-radius: 2px;
+      box-shadow: 2px 2px 4px #8070a0;
+      font: 40px Lexend;
+      cursor: pointer;
+      transition-duration: 0.3s;
+    }
+
+    .button1:hover {
+      border-radius: 6px;
+      box-shadow: 4px 4px 6px #8070a0;
+      color: #CDF8FF;
+    }
+
+    .title {
+      font: 70px Raleway;
+      text-shadow: 4px 4px 2px #000000;
+    }
+
+    .text {
+      font: 35px Raleway;
+      text-shadow: 2px 2px 1px #000000;
+    }
+    
+    div.changelog {
+      background-color: transparent;
+      font-family: Raleway;
+      text-align: left;
+
+      color: #abafcc;
+      border-radius: 6px;
+      border-style: dashed;
+
+      width: 70%;
+      max-width: 500px;
+      height: 500px;
+      overflow: auto;
+      margin: auto;
+    }
+  </style>
 </head>
 
 <body>
-	<video playsinline autoplay loop muted onloadstart="this.muted = true;this.play();" class="video">
-		<source src="https://github.com/bleachhack/bleachhack.github.io/raw/main/static/background.mp4" type="video/mp4">
-	</video>
+  <video playsinline autoplay loop muted onloadstart="this.muted = true;this.play();" class="video">
+    <source src="https://github.com/bleachhack/bleachhack.github.io/raw/main/static/background.mp4" type="video/mp4">
+  </video>
 
-	<h1 class="title"><span style="color: #e4bf47;">Bleach<span style="color: #ebafcc;">Hack</h1>
-	<p class="text" style="color: #abafcc;">Downloads:</p>
+  <h1 class="title"><span style="color: #e4bf47;">Bleach<span style="color: #ebafcc;">Hack</h1>
+  <p class="text" style="color: #abafcc;">Downloads:</p>
 
-	<button class="button1" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.16.5.zip'" type="button">⭳ 1.16.5</button>
-	<br></br>
-	<button class="button1" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-20w11a.zip'" type="button">⭳ 20w11a</button>
+  <button class="button1" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.16.5.zip'" type="button">⭳ 1.16.5</button>
+  <br></br>
+  <button class="button1" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-20w11a.zip'" type="button">⭳ 20w11a</button>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <p class="text" style="color: #abafcc;">Changelog:</p>
+  <div class="changelog">
+    <pre style="text-align: center; font-size: 30px; font-weight:700; color: #718f88;">0.15.1:</pre>
+    <pre style="transform: translateX(10px); font-size: 14px; color: #718f88;">
+Fixed some modules crashing on startup if enabled
+Fixed ShaderRender crashing your game on startup if your os is in turkish
+- Fixed several potential bugs if your os is in turkish
+Fixed Protocol Changer selecting all text fields at once
+Fixed AutoTool not choosing sword when mining bamboo
+Fixed Killaura attacking entities after you're dead
+Fixed StorageESP Outline/Shader only properly working if there were other glowing entities in your fov
+Removed Ambience custom end sky color setting, (no point in not always having it on)
+Added AutoSteal
+Added $say
+Added a new $help layout
+Fixed the $give description using [] instead of <>
+Added AutoThrow
+Improved ElytraFly Bruh Momentum and rename it BruhFly
+Implemented custom item names in DiscordRPC
+Fixed DiscordRPC on silent mode not showing the right image
+Fixed windows being somewhat hard to drag
+Added List Settings
+- Added block list to Xray
+-- Removed $xray
+- Added filter block list to Scaffold
+-- Removed $scaffold
+- Added filter block list to Nuker
+-- Removed $nuker
+Fixed modules not autosaving when their settings change
+Fixed CrystalAura targeting friends & yourself in freecam
+Fixed DiscordRPC and UI always enabling on startup
+Fixed title screen buttons not appearing sometimes
+Added "$give preset ___ egg" to $give to bypass some no-nbt-chest plugins
+Added $dupe book
+Improved NoRender
+- Added custom sign text to NoRender and $customsign
+- Added armor stands and falling blocks
+Improved $nbt get
+- Output is now properly formatted
+- Added a copy button
+Improved and cleaned up Peek
+- Fixed inventory items clipping through the tooltip
+- Fixed signed books not peeking correctly
+Fixed $ci not updating your inventory
+Fixed $skull and $skull img because mojang is bruh
+Added $invpeek
+Improved PacketFly flying
+Added Auto Updater
+
+Renamed Github repo from bleachhack-1.14 to BleachHack
+    </pre>
+  </div>
 </body>
 
 </html>
