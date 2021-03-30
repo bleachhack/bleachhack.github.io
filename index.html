@@ -12,11 +12,10 @@
       background-color: black;
       text-align: center;
     }
-    
+
     pre {
       background-color: transparent;
       border: 0px;
-      text-shadow: 1px 1px #000000;
     }
 
     .video {
@@ -55,22 +54,40 @@
       font: 35px Raleway;
       text-shadow: 2px 2px 1px #000000;
     }
-    
+
     div.changelog {
       background-color: transparent;
       font-family: Raleway;
       text-align: left;
-
-      scrollbar-color: #60606090 #00000040;
       color: #abafcc;
       border-radius: 6px;
       border-style: dashed;
-
       width: 70%;
-      max-width: 500px;
+      max-width: 600px;
       height: 500px;
       overflow: auto;
       margin: auto;
+      
+      /* firefox nibbas */
+      scrollbar-color: #60606090 #00000040;
+    }
+
+    /* non-firefox nibbas */
+    div.changelog::-webkit-scrollbar {
+      width: 13px;
+      height: 13px;
+    }
+
+    div.changelog::-webkit-scrollbar-track {
+      background: #00000040;
+    }
+
+    div.changelog::-webkit-scrollbar-thumb {
+      background: #60606090;
+    }
+
+    div.changelog::-webkit-scrollbar-thumb:hover {
+      background: #555;
     }
   </style>
 </head>
