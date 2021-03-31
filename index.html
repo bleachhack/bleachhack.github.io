@@ -66,6 +66,7 @@
 
     .text {
       font: 35px Raleway;
+      color: #abafcc;
       text-shadow: 2px 2px 1px #000000;
     }
 
@@ -86,6 +87,47 @@
       color: #CDF8FF;
     }
     
+    div.features {
+      background-color: transparent;
+      text-align: left;
+      color: #abafcc;
+      text-shadow: 1px 1px 1px #000000;
+      border: 1px solid;
+      border-image-slice: 2;
+      border-width: 1px;
+      border-image-source: linear-gradient(135deg, #6060c0, #8070a020);
+      width: 70%;
+      max-width: 725px;
+      overflow: auto;
+      margin: auto;
+      font: 17px Ubuntu Mono;
+      color: #9bbfff;
+    }
+    
+    div.features ul {
+      -webkit-column-count: 4;
+      -moz-column-count: 4;
+      column-count: 4;
+    }
+
+    div.changelog {
+      background-color: transparent;
+      text-align: left;
+      color: #abafcc;
+      text-shadow: 1px 1px 1px #000000;
+      border: 1px solid;
+      border-image-slice: 2;
+      border-width: 1px;
+      border-image-source: linear-gradient(135deg, #6060c0, #8070a020);
+      width: 70%;
+      max-width: 650px;
+      height: 600px;
+      margin: auto;
+      overflow: auto;
+      /* firefox nibbas */
+      scrollbar-color: #60606090 #00000040;
+    }
+    
     div.changelog li {
       transform: translateX(-12px);
       font: 17px Ubuntu Mono;
@@ -94,26 +136,10 @@
 
     .logTitle {
       text-align: center;
-      font: 38px Ubuntu Mono;
+      font: 40px Ubuntu Mono;
       line-height: 12px;
       font-weight: 700;
       color: #9bbfff;
-    }
-
-    div.changelog {
-      background-color: transparent;
-      text-align: left;
-      color: #abafcc;
-      text-shadow: 1px 1px 1px #000000;
-      border-radius: 6px;
-      border-style: dashed;
-      width: 70%;
-      max-width: 600px;
-      height: 500px;
-      overflow: auto;
-      margin: auto;
-      /* firefox nibbas */
-      scrollbar-color: #60606090 #00000040;
     }
 
     /* non-firefox nibbas */
@@ -165,7 +191,7 @@
   <br></br>
   <br></br>
 
-  <p class="text" style="color: #abafcc;">Downloads:</p>
+  <p class="text">Downloads:</p>
 
   <button class="button1" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.16.5.zip'" type="button">⭳ 1.16.5</button>
   <br></br>
@@ -174,10 +200,123 @@
   <br></br>
   <br></br>
   <br></br>
+
+  <p class="text" style="line-height: 10px;">Features:</p>
+  <p class="text" style="line-height: 0px; font-size: 18px;">As of 0.15.1:</p>
+  <div class="features">
+    <h1 class="logTitle", style="font-size: 35px;">Modules:</h1>
+    <ul>
+      <li>Ambience</li>
+      <li>AntiChunkBan</li>
+      <li>AntiHunger</li>
+      <li>ArrowJuke</li>
+      <li>AutoArmor</li>
+      <li>AutoBuild</li>
+      <li>AutoDonkeyDupe</li>
+      <li>AutoReconnect</li>
+      <li>AutoRespawn</li>
+      <li>AutoSign</li>
+      <li>AutoSteal</li>
+      <li>AutoThrow</li>
+      <li>AutoTool</li>
+      <li>AutoTotem</li>
+      <li>AutoWalk</li>
+      <li>BetterPortal</li>
+      <li>BlockParty</li>
+      <li>BookCrash</li>
+      <li>BowBot</li>
+      <li>ClickGui</li>
+      <li>ClickTp</li>
+      <li>ColorSigns</li>
+      <li>Criticals</li>
+      <li>CrystalAura</li>
+      <li>CustomChat</li>
+      <li>DiscordRPCMod</li>
+      <li>Dispenser32k</li>
+      <li>ElytraFly</li>
+      <li>EntityControl</li>
+      <li>ElytraReplace</li>
+      <li>ESP</li>
+      <li>FakeLag</li>
+      <li>FastUse</li>
+      <li>Flight</li>
+      <li>Freecam</li>
+      <li>Fullbright</li>
+      <li>Ghosthand</li>
+      <li>HandProgress</li>
+      <li>Jesus</li>
+      <li>Killaura</li>
+      <li>MountBypass</li>
+      <li>MouseFriend</li>
+      <li>Nametags</li>
+      <li>Nofall</li>
+      <li>NoKeyBlock</li>
+      <li>NoRender</li>
+      <li>NoSlow</li>
+      <li>Notebot</li>
+      <li>NotebotStealer</li>
+      <li>NoVelocity</li>
+      <li>Nuker</li>
+      <li>OffhandCrash</li>
+      <li>PacketFly</li>
+      <li>Peek</li>
+      <li>PlayerCrash</li>
+      <li>RotationSnap</li>
+      <li>SafeWalk</li>
+      <li>Scaffold</li>
+      <li>ShaderRender</li>
+      <li>Spammer</li>
+      <li>Speed</li>
+      <li>SpeedMine</li>
+      <li>Sprint</li>
+      <li>StarGithub</li>
+      <li>Step</li>
+      <li>StorageESP</li>
+      <li>Surround</li>
+      <li>Timer</li>
+      <li>Tracers</li>
+      <li>Trail</li>
+      <li>Trajectories</li>
+      <li>UI</li>
+      <li>Xray</li>
+      <li>Zoom</li>
+    </ul>
+    <h1 class="logTitle", style="font-size: 35px; padding: 13px 0px 0px 0px;">Commands:</h1>
+    <ul>
+      <li>$bind</li>
+      <li>$ci</li>
+      <li>$customchat</li>
+      <li>$customsign</li>
+      <li>$dupe</li>
+      <li>$enchant</li>
+      <li>$entitystats</li>
+      <li>$friends</li>
+      <li>$gamemode</li>
+      <li>$give</li>
+      <li>$guiReset</li>
+      <li>$help</li>
+      <li>$invpeek</li>
+      <li>$nbt</li>
+      <li>$notebot</li>
+      <li>$peek</li>
+      <li>$prefix</li>
+      <li>$rbook</li>
+      <li>$rename</li>
+      <li>$rpc</li>
+      <li>$say</li>
+      <li>$setting</li>
+      <li>$skull</li>
+      <li>$toggle</li>
+    </ul>
+  </div>
+
+  <br></br>
+  <br></br>
+  <br></br>
   <br></br>
   <p class="text" style="color: #abafcc;">Changelog:</p>
   <div class="changelog">
-    <pre class="logTitle">0.15.1:</pre>
+    <h1 class="logTitle">0.15.1:</h1>
     <ul>
       <li>Fixed some modules crashing on startup if enabled</li>
       <li>Fixed ShaderRender crashing your game on startup if your os is in turkish</li>
@@ -226,7 +365,7 @@
       <br></br>
       <li>Renamed Github repo from bleachhack-1.14 to BleachHack</li>
     </ul>
-    <pre class="logTitle">B15:</pre>
+    <h1 class="logTitle">B15:</h1>
     <ul>
       <li>Fix Peek crash</li>
       <li>Remove OffhandCrash default bind</li>
@@ -342,178 +481,6 @@
       <li>- Added access to the clickgui on the title screen</li>
       <li>Dropped 1.14 and 1.15 support</li>
       <li>Updated from 1.16.2 to 1.16.5</li>
-    </ul>
-    <pre class="logTitle">B14.2:</pre>
-    <ul>
-      <li>Improve scaffold</li>
-      <li>- Now places blocks in a spiral pattern instead of a big square to make it easier to place on larger modes</li>
-      <li>- Add SafeWalk setting</li>
-      <li>- Add Highlight setting</li>
-      <li>- Add Tower setting</li>
-      <li>- Add 7x7 place mode</li>
-      <li>Improve $rbook parsing, now supports hex and octal shit</li>
-      <li>Improved most of the "Rotate" settings in modules to support client or serverside rotate</li>
-      <li>Fixed Freecam</li>
-      <br></br>
-      <li>Updated 1.16.2-rc1 to 1.16.2</li>
-    </ul>
-    <pre class="logTitle">B14.1:</pre>
-    <ul>
-      <li>Improve Nametags</li>
-      <li>- Fix items always showing their name instead of only when they are renamed</li>
-      <li>- Add Health percent option to nametags</li>
-      <li>- Fix nametags only showing entities with already a nametag on them in 1.14</li>
-      <li>ChestESP for itemframes now fill the entire frame when they have a map</li>
-      <li>Added option for donkeys/llamas in CheckESP</li>
-      <li>Fix elytrafly sinking (again)</li>
-      <li>Fix blocks not correctly placing on cake and signs</li>
-      <li>Fix HandProgress (thanks waste of oxigen)</li>
-      <li>Imporve $bind:</li>
-      <li>- Better syntax</li>
-      <li>- Added clear command</li>
-      <li>- Improved Output</li>
-      <li>- Added special case for rshift/rcontrol keys</li>
-      <li>Added a new Discord RPC</li>
-      <li>Fix Ambience Sky Color on 1.16</li>
-      <li>Fixed some config bugs:</li>
-      <li>- Fixed Freecam and clickgui settings not saving</li>
-      <li>- Fixed modules with a default bind reverting when set to NONE</li>
-      <li>- Fixed config not scheduling a save when a bind is set</li>
-      <li>- Config now only saves non-default settings to make it upto 90% smaller</li>
-      <li>Added Zoom</li>
-      <li>Fixed armor in UI not rendering the armor on 1.16+</li>
-      <li>Fix wandering traders not being considered an animal</li>
-      <li>Added NoKeyBlock</li>
-      <li>Added ColorSigns</li>
-      <li>Fixed Peek on 1.16.1</li>
-      <br></br>
-      <li>Updated the 1.16.2-pre1 version to 1.16.2-rc1</li>
-    </ul>
-    <pre class="logTitle">B14:</pre>
-    <ul>
-      <li>Improve Peek</li>
-      <li>- Fix Peek lighting issues</li>
-      <li>- Fix Peek crashing on 1.16</li>
-      <li>- Fix Map Peek crashing with custom maps</li>
-      <li>Add AntiHunger</li>
-      <li>Fix Wurst compatibility</li>
-      <li>Fix Optifine compatibility for 1.14</li>
-      <li>Improve SpeedMine</li>
-      <li>- Added AntiFatigue and AntiOffGround</li>
-      <li>- Fixed Being able to instant-mine blocks with the wrong tool</li>
-      <li>- Fixed Haste level being 1 too high</li>
-      <li>Improve Nametags</li>
-      <li>- Fix nametag depth on 1.15+ (thanks THEREALWWEFAN)</li>
-      <li>- Disable items on 1.15+ to prevent item glitches (back soom:tm:)</li>
-      <li>- Add Items to Nametags</li>
-      <li>Fix the main menu login manager basically being impossible to use at normal resolution</li>
-      <li>Improve nuker</li>
-      <li>Made your head spin to the block you are looking at when you rotate server side</li>
-      <li>Improve xray/nuker command</li>
-      <li>Modules, settings, and binds are now stored in 1 json file</li>
-      <li>Made A LOT of clickgui changes</li>
-      <li>- Fixed the clickgui size slider not working</li>
-      <li>- Added color settings</li>
-      <li>- Added subsettings</li>
-      <li>Fix potential dispenser32k crash</li>
-      <li>Improved ESP and Tracers</li>
-      <li>- Made ESP and tracer colors customizable</li>
-      <li>- Entities now doesn't change their team color after they are detected on esp</li>
-      <li>Added sky and cloud color settings to Ambience</li>
-      <li>Improve InventoryWalk</li>
-      <li>- Added NCP Bypass</li>
-      <li>- Added Rotation option</li>
-      <li>-- Added Pitch Limit setting</li>
-      <li>-- Added Anti-Spinbot bypass</li>
-      <li>Improve Crystalaura (now actually works good)</li>
-      <li>Add Trajectories</li>
-      <li>Improve AutoTool</li>
-      <li>- Added Switch Back and DurabilitySave options</li>
-      <li>Fix Nuker NoParicles</li>
-      <li>Add BetterPortal</li>
-      <li>Improve NoRender</li>
-      <li>- Added NoRender Totem, Elder Guardian, Maps and Skylight options</li>
-      <li>Add ec.me flight mode</li>
-      <li>Fix Freecam block collision</li>
-      <li>Improved UI</li>
-      <li>- Watermark now shows when arraylist is off</li>
-      <li>- Made playerlist look better and fixed that it didn't show if the arraylist is off</li>
-      <li>- Make timestamp shorter and customizable</li>
-      <li>- Move the server to the info list</li>
-      <li>- Shortened info mode text</li>
-      <li>- Added armor durability settings</li>
-      <li>Make config files only save when necessary to avoid lag spikes from saving config</li>
-      <li>Added descriptions to a lot of module settings</li>
-    </ul>
-    <pre class="logTitle">B13.2:</pre>
-    <ul>
-      <li>Added NoRender</li>
-      <li>Added HandProgress (WIP)</li>
-      <li>Logins are no longer stored in plaintext</li>
-      <li>Added update link when client is outdated</li>
-      <li>Add a search field option to clickgui</li>
-      <li>Discord RPC text is now saved</li>
-      <li>Fixed Map Peek not working on 1.14</li>
-      <li>Started on adding descriptions to settings</li>
-      <li>- All new modules will have setting descriptions</li>
-      <li>  and the old ones will have next update</li>
-      <li>Improve Crystalaura</li>
-      <li>Improve all block placing</li>
-      <li>Fix modules being toggled when F3 is down</li>
-      <li>Fix NoVelocity when in dev workspace</li>
-      <li>Fix BowBot not shooting at 1.0 charge</li>
-      <li>The state of the main menu is now saved</li>
-      <li>EltryFly normal mode now doesn't go forward without pressing "w"</li>
-      <li>Added Surround</li>
-      <li>Add CustomChat and $customchat</li>
-      <li>- Add CustomFont</li>
-      <li>- Add Prefix and suffix</li>
-      <li>- Added AutoGG and AutoEz</li>
-      <li>Fix 1.14 clickgui saying its 1.15</li>
-      <br></br>
-      <li>Updated 20w28a version to 20w29a</li>
-    </ul>
-    <pre class="logTitle">B13.1:</pre>
-    <ul>
-      <li>???</li>
-    </ul>
-    <pre class="logTitle">B13:</pre>
-    <ul>
-      <li>Changed the command prefix to "$"</li>
-      <li>Better command output formatting</li>
-      <li>Improved ChunkSize for 1.16</li>
-      <li>Added Dispenser32k</li>
-      <li>Better $help command</li>
-      <li>Fix having to doubleclick clickgui windows to move them</li>
-      <li>Add Mountbypass</li>
-      <li>Better ChestESP</li>
-      <li>- Bounding box correctly size for chests and echests</li>
-      <li>- Connected chests now join smoothly</li>
-      <li>Clickgui now shows the currect commadn prefix</li>
-      <li>Fix bug that crashes notebot when importing "pling" notes</li>
-      <li>New notebot tutorial</li>
-      <li>Fix notebot only autoplaying if loop was enabled</li>
-      <li>Fix gui lighthing glitches</li>
-      <li>Fix autototem</li>
-      <li>Added "$give preset eggs"</li>
-      <li>Improved Fastuse</li>
-      <li>- Added "only throwables" option</li>
-      <li>- Added "only xp bottles" option</li>
-      <li>Improve Freecam</li>
-      <li>- Now works while riding and doesn't dismount you</li>
-      <li>Add timer</li>
-      <li>Fixed a bug with speedhack</li>
-      <li>Improved NoSlow</li>
-      <li>- Added an "items" option</li>
-      <li>- Added an "inventory" option</li>
-      <li>Add AutoRespawn (credit Monsturtruc#9164)</li>
-      <li>Add a friend system</li>
-      <li>- Added a $friends command</li>
-      <li>- Added MouseFriend</li>
-      <li>- Implemented friends in ESP</li>
-      <li>- Implemented friends in Killaura</li>
-      <li>- Implemented friends in Tracers</li>
-      <li>Updated the 1.16.1 version to 20w28a</li>
     </ul>
   </div>
 </body>
