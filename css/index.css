@@ -13,7 +13,6 @@ div.features {
   text-shadow: 1px 1px #000000;
   border: 1px solid;
   border-image-slice: 2;
-  border-width: 1px;
   border-image-source: linear-gradient(135deg, #6060c0, #8070a020);
   width: 70%;
   max-width: 725px;
@@ -41,13 +40,11 @@ div.changelog {
   text-shadow: 1px 1px #000000;
   border: 1px solid;
   border-image-slice: 2;
-  border-width: 1px;
   border-image-source: linear-gradient(135deg, #6060c0, #8070a020);
   width: 70%;
   max-width: 650px;
   height: 600px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: auto auto 20px;
   overflow: auto;
   /* firefox nibbas */
   scrollbar-color: #60606090 #00000040;
