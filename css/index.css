@@ -1,3 +1,15 @@
+.download-text {
+  font: 17px Lexend;
+  color: #abafcc;
+  text-shadow: 2px 2px 1px #000000;
+  transition-duration: 0.25s;
+}
+
+.download-text:hover {
+  color: #7b9fcc;
+  font: 18px Lexend;
+}
+
 .about-text {
   color: #abafcc;
   text-shadow: 1px 1px 1px #000000;
@@ -24,14 +36,13 @@ div.features {
 div.features ul {
   -webkit-column-count: 4;
   -moz-column-count: 4;
-  -ms-column-count: 4;
-  -o-column-count: 4;
   column-count: 4;
 }
 
-div.changelog li {
-  transform: translateX(-12px);
-  font: 17px Lexend;
+.logTitle {
+  text-align: center;
+  font: 38px Lexend;
+  line-height: 12px;
 }
 
 div.changelog {
@@ -50,10 +61,9 @@ div.changelog {
   scrollbar-color: #60606090 #00000040;
 }
 
-.logTitle {
-  text-align: center;
-  font: 38px Lexend;
-  line-height: 12px;
+div.changelog li {
+  transform: translateX(-12px);
+  font: 17px Lexend;
 }
 
 /* non-firefox nibbas */
