@@ -55,7 +55,7 @@ div.changelog {
   width: 70%;
   max-width: 650px;
   height: 600px;
-  margin: auto auto 20px;
+  margin: auto;
   overflow: auto;
   /* firefox nibbas */
   scrollbar-color: #60606090 #00000040;
