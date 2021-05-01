@@ -45,9 +45,9 @@
   <div style="height: 95px;"></div>
 
   <p class="text">Downloads:</p>
-  <button class="button" onclick="location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-1.16.5.jar'" type="button"><i class="fas fa-angle-down" style="font-size: 33px;"></i>  1.16.5</button>
+  <button class="button" onclick="location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-1.16.5.jar'" type="button"><i class="fas fa-angle-down" style="font-size: 33px;"></i>  1.16.5</button>
   <div style="height: 17px;"></div>
-  <button class="button" onclick="location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w17a.jar'" type="button"><i class="fas fa-angle-down" style="font-size: 33px;"></i>  21w17a</button>
+  <button class="button" onclick="location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w17a.jar'" type="button"><i class="fas fa-angle-down" style="font-size: 33px;"></i>  21w17a</button>
 
   <div style="height: 10px;"></div>
   <a class="download-text" href="/downloads.html">More downloads..</a>
@@ -71,7 +71,7 @@
       <li>ArrowJuke</li>
       <li>AutoArmor</li>
       <li>AutoBuild</li>
-      <li>AutoDonkeyDupe</li>
+      <li>AutoIStackDupe</li>
       <li>AutoLog</li>
       <li>AutoParkour</li>
       <li>AutoReconnect</li>
@@ -109,6 +109,7 @@
       <li>HoleESP</li>
       <li>Jesus</li>
       <li>Killaura</li>
+      <li>LogoutSpot</li>
       <li>MountBypass</li>
       <li>MouseFriend</li>
       <li>Nametags</li>
@@ -180,6 +181,66 @@
 
   <p class="text" style="color: #abafcc;">Changelog:</p>
   <div class="changelog">
+    <h1 class="logTitle">0.16:</h1>
+    <ul>
+      <li>Added PlaceInAir (thanks lasnik)</li>
+      <li>Added LogoutSpot (thanks lasnik)</li>
+      <li>Improved HoleESP</li>
+      <li>- Made bottom render flat and moved it to a subsetting</li>
+      <li>- Added RenderSides setting</li>
+      <li>- Added HideWhenIn setting</li>
+      <li>- Fixed it searching blocks every tick</li>
+      <li>Improved Peek</li>
+      <li>- Fixed item count texts going through peek overlays</li>
+      <li>- Added proper backgrounds to Book peek and Map peek</li>
+      <li>Fixed ElytraFly Control mode</li>
+      <li>Fixed Box quads overlapping tracers</li>
+      <li>Removed StorageESP & ESP Outline Mode because Shader does the same thing</li>
+      <li>Fix NoSlow Inventory not moving in signed bookes</li>
+      <li>Fixed the title screen not showing the taskbar when coming from mc options</li>
+      <li>Improved ClickGui and $guireset</li>
+      <li>- The ClickGui now saves whether a window is closed or not</li>
+      <li>- Renamed $guireset to $clickgui</li>
+      <li>-- Added closed mode to reset</li>
+      <li>-- Added ability to change the ClickGui window length in $clickgui</li>
+      <li>- Made the clickgui module be on while in the clickgui</li>
+      <li>- Fixed windows taking a frame to reset their width when resetting the clickgui</li>
+      <li>- Fixed windows taking a frame to update their height when expanding modules</li>
+      <li>- Clickgui now saves as neat json instead of bruh format</li>
+      <li>Improved UI ModuleList</li>
+      <li>- Renamed "Extra Line" to "Inner Line"</li>
+      <li>- Added New mode to watermark</li>
+      <li>Completely rewrote the command system</li>
+      <li>- Added categories to each command</li>
+      <li>- Added multiple aliases to some commands</li>
+      <li>- Updated $help and command errors to show the category and aliases of the command</li>
+      <li>Improved Nametags</li>
+      <li>- Fixed Nametags text having buggy lighting</li>
+      <li>- Fixed the entire world lighting changing direction when rendering nametag items</li>
+      <li>- Renamed Health Number to NumberOf and added a new Number mode</li>
+      <li>- Removed brackets around health</li>
+      <li>- Added Ping to players</li>
+      <li>- Added Gamemode to players</li>
+      <li>- Fixed Nametags jittering when in the pause menu</li>
+      <li>Added Delay and PopDelay to AutoTotem</li>
+      <li>Fixed $rename adding an extra space to the end of names</li>
+      <li>Split $rpc into top and bottom commands </li>
+      <li>Fixed Notebot highlight being too opaque</li>
+      <li>Fixed Notebot updated an outdated notebot error message</li>
+      <li>Added chat output when $rbook is executed successfully</li>
+      <li>Fixed NoSlow inventory moving in writable books</li>
+      <li>Fixed search not removing the blocks when a nether portal is broken (And slightly optimized it)</li>
+      <li>Added Highlight to nuker</li>
+      <li>Moved all logging to Log4j</li>
+      <li>Fixed rare crash when disabling xray</li>
+      <li>Readded that Freecam doesn't cull chunks</li>
+      <li>Fixed crash when using optifabric and fixed Xray on optifabric</li>
+      <li>Made freecam players copy health and potion effects from the real player</li>
+      <li>Improved $dupe description and renamed vanilla mode to old mode</li>
+      <br/>
+      <li>Fixed compatibility with macOS</li>
+      <li>Updated 1.17 version to 21w17a</li>
+    </ul>
     <h1 class="logTitle">0.15.3:</h1>
     <ul>
       <li>Added HoleESP (thanks lasnik)</li>

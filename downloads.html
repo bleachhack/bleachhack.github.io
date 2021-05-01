@@ -43,6 +43,7 @@
   <div class="download-box">
     <span class="text" id="version-title" style="font-size: 25px;">BleachHack </span>
     <select class="download-select" id="version-select" name="version" onchange="changeVer(this.options[this.selectedIndex].text)">
+      <option value="0.16">0.16</option>
       <option value="0.15.3">0.15.3</option>
       <option value="0.15.2">0.15.2</option>
       <option value="0.15.1">0.15.1</option>
@@ -69,7 +70,7 @@
 
   <p class="text" style="line-height: 0; margin-bottom: 34px;">Beta builds:</p>
   <div class="beta-download-box">
-    <span class="text" style="font-size: 25px;">BleachHack 0.16-Beta</span>
+    <span class="text" style="font-size: 25px;">BleachHack 0.16.1-Beta</span>
 
     <div style="height: 15px;"></div>
 
@@ -96,6 +97,14 @@
 
       resetVerButtons();
       switch (ver) {
+        case "0.16":
+          document.getElementById('button1').style.display = "inline";
+          document.getElementById('button1').innerHTML += "1.16.5";
+          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-1.16.5.jar'};
+          document.getElementById('button2').style.display = "inline";
+          document.getElementById('button2').innerHTML += "21w17a";
+          document.getElementById('button2').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w17a.jar'};
+          break;
         case "0.15.3":
           document.getElementById('button1').style.display = "inline";
           document.getElementById('button1').innerHTML += "1.16.5";
