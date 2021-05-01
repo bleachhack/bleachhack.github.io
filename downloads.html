@@ -61,19 +61,21 @@
     <button class="button" id="button3" style="margin-top: 12px;"></button>
     <div></div>
     <button class="button" id="button4" style="margin-top: 12px;"></button>
+    <div></div>
+    <button class="button" id="button5" style="margin-top: 12px;"></button>
   </div>
 
   <div style="height: 83px;"></div>
 
   <p class="text" style="line-height: 0; margin-bottom: 34px;">Beta builds:</p>
   <div class="beta-download-box">
-    <span class="text" style="font-size: 25px;">BleachHack 0.15.4-Beta</span>
+    <span class="text" style="font-size: 25px;">BleachHack 0.16-Beta</span>
 
     <div style="height: 15px;"></div>
 
     <button class="button" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.16.5.zip'"><i class="fas fa-angle-down" style="font-size: 33px;"></i> 1.16.5</button>
     <div></div>
-    <button class="button" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-21w16a.zip'" style="margin-top: 12px;"><i class="fas fa-angle-down" style="font-size: 33px;"></i> 21w16a</button>
+    <button class="button" onclick="location.href='https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-21w17a.zip'" style="margin-top: 12px;"><i class="fas fa-angle-down" style="font-size: 33px;"></i> 21w17a</button>
 
     <p class="text" style="margin: 25px 0 0 0; font-size: 16px; color: #c06065;">Warning: Unstable builds, expect bugs and unfinished features</p>
   </div>
@@ -107,6 +109,9 @@
           document.getElementById('button4').style.display = "inline";
           document.getElementById('button4').innerHTML += "21w16a";
           document.getElementById('button4').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w16a.jar'};
+          document.getElementById('button5').style.display = "inline";
+          document.getElementById('button5').innerHTML += "21w17a";
+          document.getElementById('button5').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w17a.jar'};
           break;
         case "0.15.2":
           document.getElementById('button1').style.display = "inline";
@@ -183,6 +188,8 @@
       document.getElementById('button3').innerHTML = "<i class=\"fas fa-angle-down\" style=\"font-size: 33px;\"></i> ";
       document.getElementById('button4').style.display = "none";
       document.getElementById('button4').innerHTML = "<i class=\"fas fa-angle-down\" style=\"font-size: 33px;\"></i> ";
+      document.getElementById('button5').style.display = "none";
+      document.getElementById('button5').innerHTML = "<i class=\"fas fa-angle-down\" style=\"font-size: 33px;\"></i> ";
     }
   </script>
 </body>
