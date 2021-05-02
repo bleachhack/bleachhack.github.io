@@ -33,7 +33,7 @@
     <a href="/">Home</a>
     <a href="/downloads.html">Downloads</a>
     <a href="https://discord.gg/b5Wc4nQ">Discord</a>
-    <a href="https://www.youtube.com/watch?v=XiUZUDZOPog">Donate</a>
+    <a href="https://paypal.me/BleachHack">Donate</a>
     <a href="https://github.com/BleachDrinker420/BleachHack">Source code</a>
   </nav>
 
@@ -98,93 +98,46 @@
       resetVerButtons();
       switch (ver) {
         case "0.16":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.16.5";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-1.16.5.jar'};
-          document.getElementById('button2').style.display = "inline";
-          document.getElementById('button2').innerHTML += "21w17a";
-          document.getElementById('button2').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w17a.jar'};
+          addVerButton("1", "1.16.5", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-1.16.5.jar");
+          addVerButton("2", "21w17a", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w17a.jar");
           break;
         case "0.15.3":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.16.5";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-1.16.5.jar'};
-          document.getElementById('button2').style.display = "inline";
-          document.getElementById('button2').innerHTML += "21w14a";
-          document.getElementById('button2').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w14a.jar'};
-          document.getElementById('button3').style.display = "inline";
-          document.getElementById('button3').innerHTML += "21w15a";
-          document.getElementById('button3').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w15a.jar'};
-          document.getElementById('button4').style.display = "inline";
-          document.getElementById('button4').innerHTML += "21w16a";
-          document.getElementById('button4').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w16a.jar'};
-          document.getElementById('button5').style.display = "inline";
-          document.getElementById('button5').innerHTML += "21w17a";
-          document.getElementById('button5').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w17a.jar'};
+          addVerButton("1", "1.16.5", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-1.16.5.jar");
+          addVerButton("2", "21w14a", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w14a.jar");
+          addVerButton("3", "21w15a", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w15a.jar");
+          addVerButton("4", "21w16a", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w16a.jar");
+          addVerButton("5", "21w17a", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w17a.jar");
           break;
         case "0.15.2":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.16.5";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-1.16.5.jar'};
-          document.getElementById('button2').style.display = "inline";
-          document.getElementById('button2').innerHTML += "21w13a";
-          document.getElementById('button2').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w13a.jar'};
-          document.getElementById('button3').style.display = "inline";
-          document.getElementById('button3').innerHTML += "21w14a";
-          document.getElementById('button3').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w14a.jar'};
+          addVerButton("1", "1.16.5", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-1.16.5.jar");
+          addVerButton("2", "21w13a", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w13a.jar");
+          addVerButton("3", "21w14a", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w14a.jar");
           break;
         case "0.15.1":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.16.5";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.1/BleachHack-0.15.1-1.16.5.jar'};
+          addVerButton("1", "1.16.5", "https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.1/BleachHack-0.15.1-1.16.5.jar");
           break;
         case "B15":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.16.5";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B15/BleachHack-B15-1.16.5.jar'};
+          addVerButton("1", "1.16.5", "https://github.com/BleachDrinker420/BleachHack/releases/download/B15/BleachHack-B15-1.16.5.jar");
           break;
         case "B14.2":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.14.4";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.14.4.jar'};
-          document.getElementById('button2').style.display = "inline";
-          document.getElementById('button2').innerHTML += "1.15.2";
-          document.getElementById('button2').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.15.2.jar'};
-          document.getElementById('button3').style.display = "inline";
-          document.getElementById('button3').innerHTML += "1.16.2";
-          document.getElementById('button3').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.16.2.jar'};
+          addVerButton("1", "1.14.4", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.14.4.jar");
+          addVerButton("2", "1.15.2", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.15.2.jar");
+          addVerButton("3", "1.16.2", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.16.2.jar");
           break;
         case "B14.1":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.14.4";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.14.4.jar'};
-          document.getElementById('button2').style.display = "inline";
-          document.getElementById('button2').innerHTML += "1.15.2";
-          document.getElementById('button2').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.15.2.jar'};
-          document.getElementById('button3').style.display = "inline";
-          document.getElementById('button3').innerHTML += "1.16.1";
-          document.getElementById('button3').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.1.jar'};
-          document.getElementById('button4').style.display = "inline";
-          document.getElementById('button4').innerHTML += "1.16.2-rc1";
-          document.getElementById('button4').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.2-rc1.jar'};
+          addVerButton("1", "1.14.4", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.14.4.jar");
+          addVerButton("2", "1.15.2", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.15.2.jar");
+          addVerButton("3", "1.16.1", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.1.jar");
+          addVerButton("4", "1.16.2-rc1", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.2-rc1.jar");
           break;
         case "B14":
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML += "1.14.4";
-          document.getElementById('button1').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.14.4.jar'};
-          document.getElementById('button2').style.display = "inline";
-          document.getElementById('button2').innerHTML += "1.15.2";
-          document.getElementById('button2').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.15.2.jar'};
-          document.getElementById('button3').style.display = "inline";
-          document.getElementById('button3').innerHTML += "1.16.1";
-          document.getElementById('button3').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.1.jar'};
-          document.getElementById('button4').style.display = "inline";
-          document.getElementById('button4').innerHTML += "1.16.2-rc1";
-          document.getElementById('button4').onclick = function () {location.href='https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.2-rc1.jar'};
+          addVerButton("1", "1.14.4", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.14.4.jar");
+          addVerButton("2", "1.15.2", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.15.2.jar");
+          addVerButton("3", "1.16.1", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.1.jar");
+          addVerButton("4", "1.16.2-rc1", "https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.2-rc1.jar");
           break;
         default:
-          document.getElementById('button1').style.display = "inline";
-          document.getElementById('button1').innerHTML = "HOW?!?!"
+          addVerButton("1", "HOW", "https://www.youtube.com/watch?v=XiUZUDZOPog");
       }
     }
 
@@ -199,6 +152,12 @@
       document.getElementById('button4').innerHTML = "<i class=\"fas fa-angle-down\" style=\"font-size: 33px;\"></i> ";
       document.getElementById('button5').style.display = "none";
       document.getElementById('button5').innerHTML = "<i class=\"fas fa-angle-down\" style=\"font-size: 33px;\"></i> ";
+    }
+
+    function addVerButton(id, text, link) {
+      document.getElementById('button' + id).style.display = "inline";
+      document.getElementById('button' + id).innerHTML += text;
+      document.getElementById('button' + id).onclick = function () {location.href = link};
     }
   </script>
 </body>
