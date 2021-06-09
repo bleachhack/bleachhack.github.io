@@ -1,0 +1,21 @@
+.logTitle {
+  text-align: center;
+  font: 38px Lexend;
+  line-height: 12px;
+}
+
+div.changelog {
+  text-align: left;
+  color: #bbbfdc;
+  text-shadow: 1px 1px #000000;
+  width: 70%;
+  max-width: 650px;
+  height: 1000px;
+  margin: 15px auto auto;
+  overflow: visible;
+}
+
+div.changelog li {
+  transform: translateX(-12px);
+  font: 17px Lexend;
+}
