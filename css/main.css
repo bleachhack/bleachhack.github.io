@@ -61,11 +61,11 @@ body {
   font-weight: 300;
   cursor: pointer;
   text-decoration: none;
-  transition-duration: 0.3s;
+  transition-duration: 0.25s;
 }
 
 .button:hover {
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 4px 4px 6px #8070a0;
   color: #cdf8ff;
 }
