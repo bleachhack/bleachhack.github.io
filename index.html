@@ -60,7 +60,7 @@
   <div style="height: 75px;"></div>
 
   <p class="text" style="line-height: 10px;">Features:</p>
-  <p class="text" style="line-height: 0; font-size: 18px;">As of 1.0.1</p>
+  <p class="text" style="line-height: 0; font-size: 18px;">As of 1.1</p>
   <div class="features">
     <h1 class="logTitle" style="font-size: 34px;">Modules:</h1>
     <ul>
@@ -72,7 +72,7 @@
       <li>ArrowJuke</li>
       <li>AutoArmor</li>
       <li>AutoBuild</li>
-      <li>AutoIStackDupe</li>
+      <li>AutoFarm</li>
       <li>AutoLog</li>
       <li>AutoParkour</li>
       <li>AutoReconnect</li>
@@ -83,6 +83,7 @@
       <li>AutoTool</li>
       <li>AutoTotem</li>
       <li>AutoWalk</li>
+      <li>Avoid</li>
       <li>BetterCamera</li>
       <li>BetterPortal</li>
       <li>BookCrash</li>
@@ -93,7 +94,8 @@
       <li>Criticals</li>
       <li>CrystalAura</li>
       <li>CustomChat</li>
-      <li>DiscordRPC</li>
+      <li>DeathExplorer</li>
+      <li>DiscordRPCMod</li>
       <li>Dispenser32k</li>
       <li>ElytraFly</li>
       <li>EntityControl</li>
@@ -112,7 +114,6 @@
       <li>Killaura</li>
       <li>LiquidFiller</li>
       <li>LogoutSpot</li>
-      <li>MountBypass</li>
       <li>MouseFriend</li>
       <li>Nametags</li>
       <li>NewChunks</li>
@@ -120,6 +121,7 @@
       <li>NoKeyBlock</li>
       <li>NoRender</li>
       <li>NoSlow</li>
+      <li>NoSwing</li>
       <li>Notebot</li>
       <li>NotebotStealer</li>
       <li>NoVelocity</li>
@@ -133,6 +135,7 @@
       <li>Scaffold</li>
       <li>Search</li>
       <li>ShaderRender</li>
+      <li>Sneak</li>
       <li>Spammer</li>
       <li>Speed</li>
       <li>SpeedMine</li>
@@ -151,13 +154,12 @@
     </ul>
     <h1 class="logTitle" style="font-size: 34px; padding: 13px 0 0 0;">Commands:</h1>
     <ul>
-      <li>$bind</li>
+      <li>$cmdbind</li>
       <li>$ci</li>
       <li>$clickgui</li>
       <li>$clip</li>
       <li>$customchat</li>
       <li>$customsign</li>
-      <li>$dupe</li>
       <li>$enchant</li>
       <li>$entitymenu</li>
       <li>$entitystats</li>
@@ -186,6 +188,77 @@
 
   <p class="text" style="color: #abafcc;">Changelog:</p>
   <div class="changelog">
+    <h1 class="logTitle">1.1:</h1>
+    <ul>
+      <li>Added DeathExplorer</li>
+      <li>Added NoSwing</li>
+      <li>Added Avoid</li>
+      <li>Added AutoFarm</li>
+      <li>Added AutoCraftDupe (1.17+)</li>
+      <li>Added Sneak</li>
+      <li>Removed AutoIStackDupe and MountBypass</li>
+      <li>Removed $dupe old (removed it entirely on 1.17.1)</li>
+      <li>Improved BowBot</li>
+      <li>- Made it more accurate on moving entities</li>
+      <li>- Made it able to shoot crossbow</li>
+      <li>- Added a Raycast setting</li>
+      <li>- Added target settings for players, mobs and animals</li>
+      <li>Added Jesus Solid mode</li>
+      <li>Added a credits screen</li>
+      <li>Fixed BetterCamera distance only working when cameraclip is enabled</li>
+      <li>Fixed some modules kicking you when pulling items from your inventory</li>
+      <li>Fixed AutoParkour trying to jump into 1 block tall spaces and made it able to climb ladders</li>
+      <li>Fixed Discord rpc wasting space by unpacking to a different file on every startup</li>
+      <li>Fixed Dispenser32k reverting 32ks</li>
+      <li>Improved $peek</li>
+      <li>- Made it work with vehicles</li>
+      <li>- Merged $clip v & $clip h into $clip &ltx&gt &lty&gt &ltz&gt</li>
+      <li>- Added $clip up and $clip down</li>
+      <li>Added a full command suggestion system</li>
+      <li>Made UI windows attached to the bottom of the screen move up when chat is open</li>
+      <li>Fixed account manager not saving correctly after deleting an account</li>
+      <li>Fixed $help not working with all command aliases</li>
+      <li>Fixed $rbook not working with more than 100 pages</li>
+      <li>Improved Ambience Weather and Time</li>
+      <li>- Fixed it always freezing time even when the time setting was off</li>
+      <li>- Fixed the sky flickering when rain was starting/ending</li>
+      <li>- Made the world weather turn back to the real weather when turning off custom weather</li>
+      <li>Fixed RotationSnap Arrow Move sometimes not working</li>
+      <li>Fixed NoVelocity mixing up horizontal and vertical velocity in explosion knockback</li>
+      <li>Fixed AntiHunger, Flight and NoFall spamming console in 1.17</li>
+      <li>Fixed spammer always sending a message when entering a new dimension</li>
+      <li>Fixed Tracers jittering when the game is paused</li>
+      <li>Improved Nuker</li>
+      <li>- Added Softest order and fixed hardest being reversed</li>
+      <li>- Added a RangeHighlight setting</li>
+      <li>- Added a Shape setting</li>
+      <li>- Added a Raycast setting</li>
+      <li>- Made the range extrude out of your eyes instead of feet</li>
+      <li>- Fixed it trying to mine cave air and void air</li>
+      <li>- Fixed it trying to mine unbreakable blocks in survival</li>
+      <li>- Fixed it calculating distances from your feet instead of eyes </li>
+      <li>Improved Peek</li>
+      <li>- Fixed it not working on 1.17</li>
+      <li>- Made it able to draw map icons in map peek</li>
+      <li>- Slightly centered contianer items</li>
+      <li>Fixed the game crashing when trying to read corrupted json files</li>
+      <li>Fixed all overlays double drawing on 1.17</li>
+      <li>Improved the default EntityMenu entry names</li>
+      <li>Fixed Nametags jittering when the game is paused</li>
+      <li>Fixed and improved Criticals</li>
+      <li>- Fixed it not working on 1.17</li>
+      <li>- Fixed it not working while sprinting</li>
+      <li>- Added a FullJump mode</li>
+      <li>- Fixed it trying to crit while climbing, having blindness or riding a vehicle</li>
+      <li>Fixed NoSlow InventoryMove making your pitch go crazy on 1.17</li>
+      <li>Added a Projectiles setting to Killaura</li>
+      <li>Improved RenderUtils performance significantly using frustum checks (1.17+)</li>
+      <li>Replaced the placeholder mod icon</li>
+      <li>Fixed EntitySpeed trying to move work with minecarts</li>
+      <li>Improved collision detection in AntiVoid Vanilla, ArrowJuke & EntityControl AntiStuck</li>
+      <li>Added respawn anchors to surround blocks</li>
+      <li>Made the clickgui windows closed by default</li>
+    </ul>
     <h1 class="logTitle">1.0.1:</h1>
     <ul>
       <li>Made the title splash slightly bigger</li>
