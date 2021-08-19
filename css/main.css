@@ -21,7 +21,6 @@ body {
   top: 0;
   left: 0;
   font: 30px Lexend;
-  font-weight: 300;
   padding-top: 7px;
   padding-bottom: 22px;
 }
@@ -58,7 +57,6 @@ body {
   padding-right: 5px;
   box-shadow: 2px 2px 4px #8070a0;
   font: 40px Lexend;
-  font-weight: 300;
   cursor: pointer;
   text-decoration: none;
   transition-duration: 0.25s;
