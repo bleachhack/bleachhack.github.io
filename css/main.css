@@ -52,16 +52,14 @@ body {
 .button {
   color: white;
   background-image: linear-gradient(45deg, #6060c0, #8070a0);
-  border: 0;
   border-radius: 2px;
   padding-right: 5px;
   box-shadow: 2px 2px 4px #8070a0;
   font: 40px Lexend;
   cursor: pointer;
   text-decoration: none;
-  transition-duration: 0.25s;
-
   background-size: 1px 100px;
+  transition-duration: 0.25s;
 }
 
 .button:hover {
