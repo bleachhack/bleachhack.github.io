@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script type="text/javascript">
+    if (window.location.href.startsWith("/api/")) {
+        window.location.href = "http://ec2-13-53-235-214.eu-north-1.compute.amazonaws.com:8080/" + window.location.pathname.substring(5);
+    } else if (window.location.href.startsWith("/res/")) {
+        window.location.href = "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/main/" + window.location.pathname.substring(5);
+    } else {
+        window.location.href = window.location.hostname;
+        console.log("what da dog doing?")
+    }
+</script>
