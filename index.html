@@ -11,16 +11,16 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
 
-  <meta name="description" content="The most advanced 1.16/1.17 utility mod designed for anarchy servers.">
+  <meta name="description" content="The most advanced 1.17 utility mod designed for anarchy servers.">
   <meta name="keywords" content="BleachHack, Minecraft, Utility mod, Minecraft utility mod, Bleach hack, Hack client, Minecraft client, Free minecraft mod, Free Cheat, Free Clients, Utility client, Bleach hack client, Bleach client, Bleach utility mod">
 
   <meta property="og:site_name" content="BleachHack - Home">
-  <meta property="og:title" content="BleachHack utility mod for Minecraft 1.16/1.17">
-  <meta property="og:url" content="https://bleachhack.github.io/">
+  <meta property="og:title" content="BleachHack utility mod for Minecraft 1.17">
+  <meta property="og:url" content="https://bleachhack.org/">
   <meta property="og:image" content="https://github.com/bleachhack/bleachhack.github.io/raw/main/static/bh.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:description" content="The most advanced 1.16/1.17 utility mod designed for anarchy servers.">
+  <meta property="og:description" content="The most advanced 1.17 utility mod designed for anarchy servers.">
   <meta name="theme-color" content="#ebafcc">
 </head>
 <body>
@@ -44,10 +44,8 @@
 
   <div style="height: 95px;"></div>
 
-  <p class="text">Downloads:</p>
-  <a class="button" href="http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.16.5.jar" type="button"><i class="fas fa-angle-down fa-fw" style="font-size: 32px;"></i>1.16.5</a>
-  <div style="height: 14px;"></div>
-  <a class="button" href="http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.17.1.jar" type="button"><i class="fas fa-angle-down fa-fw" style="font-size: 32px;"></i>1.17.1</a>
+  <p class="text" style="margin-bottom: 20px;">Downloads:</p>
+  <a class="button" href="http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2/bleachhack-1.17.1.jar" type="button"><i class="fas fa-angle-down fa-fw" style="font-size: 32px;"></i>1.17.1</a>
 
   <div style="height: 10px;"></div>
   <a class="download-text" href="/downloads.html">More downloads..</a>
@@ -188,6 +186,68 @@
 
   <p class="text" style="color: #abafcc;">Changelog:</p>
   <div class="changelog">
+    <h1 class="logTitle">1.2:</h1>
+    <ul>
+      <li>Added $watermark</li>
+      <li>Added AutoBedrockBreak</li>
+      <li>Added SecretClose</li>
+      <li>Added AutoFish</li>
+      <li>Added Reach</li>
+      <li>Added a BleachHack Options screen</li>
+      <li>You can now see other BleachHack players in the player list</li>
+      <li>Fixed Nametags showing your own ping and gamemode for all players</li>
+      <li>Fixed Ambience being completely broken</li>
+      <li>Fixed Iris compatibility</li>
+      <li>Added a new (very sexy) update screen</li>
+      <li>Improved Avoid</li>
+      <li>- Renamed to Solidify</li>
+      <li>- Added Cobweb, Berry bushes and Honey block settings</li>
+      <li>Rewritten CustomChat</li>
+      <li>- Renamed to BetterChat</li>
+      <li>- Removed KillText</li>
+      <li>- Added Timestamp</li>
+      <li>- Added Filter</li>
+      <li>- Added ChatEncrypt and ChatDecrypt</li>
+      <li>- Improved $betterchat command</li>
+      <li>- Fixed the suffix being wrong when you reset it</li>
+      <li>- Made all the chat things work in messages</li>
+      <li>Improved NoRender</li>
+      <li>- Added NoRender Gui Background</li>
+      <li>- Split some world things into Entities and Particles categories</li>
+      <li>--- Added NoRender Fireworks in Particles</li>
+      <li>--- Added NoRender Minecarts, Snowballs & Xp Orbs in Entities</li>
+      <li>Combat module fixes</li>
+      <li>- Fixed AutoLog Player mode logging out when seeing a fake player</li>
+      <li>- Fixed BowBot, CrystalAura & Killaura trying to target some invalid/fake entities</li>
+      <li>- Fixed CrystalAura Blacklist and Raycast settings</li>
+      <li>- Optimized CrystalAura damage checks</li>
+      <li>Improved AutoReconnect</li>
+      <li>- Fixed it sometimes reconnecting to the wrong server</li>
+      <li>- Fixed the reconnect buttons not being positioned correctly when the disconnect text was multiple lines</li>
+      <li>- Removed the decimals from the reconnect countdown</li>
+      <li>Added a y offset setting to NewChunks</li>
+      <li>(somewhat) fixed Vp's sneak</li>
+      <li>Fixed nuker not being able to mine underwater plants</li>
+      <li>Added the ability to get/copy the nbt of the entity/block you're looking at in $nbt</li>
+      <li>Fixed the elapsed time on the discord rpc stuttering</li>
+      <li>Fixed bookcrash crashing the game </li>
+      <li>Fixed AirPlace and fixed AutoParkour rendering</li>
+      <li>Fixed LogoutSpot players not being removed when they log in</li>
+      <li>Fixed Nuker ruining your fps</li>
+      <li>Fixed NoRender skylight literally making skylight 1000x worse</li>
+      <li>Cleaned up and improved PacketFly with vehicles</li>
+      <li>Made friends instantly update on the tablist when you add/remove them</li>
+      <li>Made all settings save even if you're not in a world</li>
+      <li>Added proper punctuation to all module descriptions</li>
+      <li>Made the title screen tabs be smaller to fit the screen if necessary</li>
+      <li>Fixed the $bind command using uppercase in the syntax</li>
+      <li>Switched TAB to finish the current word instead of going to the next word the command suggester</li>
+      <li>Increased max speed strafe value in Speed to 0.55</li>
+      <li>Fixed several IO memory leaks</li>
+      <li>Removed all default binds except clickgui</li>
+      <li>Removed the server scraper and server cleanup</li>
+      <li>Slightly changed the BleachHack title screen colors</li>
+    </ul>
     <h1 class="logTitle">1.1:</h1>
     <ul>
       <li>Added DeathExplorer</li>
@@ -354,66 +414,6 @@
       <li>Fixed updater not working with mc versions that had a space in them</li>
       <br/>
       <li>Updated 1.17 version to 1.17-pre1</li>
-    </ul>
-    <h1 class="logTitle">0.16:</h1>
-    <ul>
-      <li>Added PlaceInAir (thanks lasnik)</li>
-      <li>Added LogoutSpot (thanks lasnik)</li>
-      <li>Improved HoleESP</li>
-      <li>- Made bottom render flat and moved it to a subsetting</li>
-      <li>- Added RenderSides setting</li>
-      <li>- Added HideWhenIn setting</li>
-      <li>- Fixed it searching blocks every tick</li>
-      <li>Improved Peek</li>
-      <li>- Fixed item count texts going through peek overlays</li>
-      <li>- Added proper backgrounds to Book peek and Map peek</li>
-      <li>Fixed ElytraFly Control mode</li>
-      <li>Fixed Box quads overlapping tracers</li>
-      <li>Removed StorageESP & ESP Outline Mode because Shader does the same thing</li>
-      <li>Fix NoSlow Inventory not moving in signed bookes</li>
-      <li>Fixed the title screen not showing the taskbar when coming from mc options</li>
-      <li>Improved ClickGui and $guireset</li>
-      <li>- The ClickGui now saves whether a window is closed or not</li>
-      <li>- Renamed $guireset to $clickgui</li>
-      <li>-- Added closed mode to reset</li>
-      <li>-- Added ability to change the ClickGui window length in $clickgui</li>
-      <li>- Made the clickgui module be on while in the clickgui</li>
-      <li>- Fixed windows taking a frame to reset their width when resetting the clickgui</li>
-      <li>- Fixed windows taking a frame to update their height when expanding modules</li>
-      <li>- Clickgui now saves as neat json instead of bruh format</li>
-      <li>Improved UI ModuleList</li>
-      <li>- Renamed "Extra Line" to "Inner Line"</li>
-      <li>- Added New mode to watermark</li>
-      <li>Completely rewrote the command system</li>
-      <li>- Added categories to each command</li>
-      <li>- Added multiple aliases to some commands</li>
-      <li>- Updated $help and command errors to show the category and aliases of the command</li>
-      <li>Improved Nametags</li>
-      <li>- Fixed Nametags text having buggy lighting</li>
-      <li>- Fixed the entire world lighting changing direction when rendering nametag items</li>
-      <li>- Renamed Health Number to NumberOf and added a new Number mode</li>
-      <li>- Removed brackets around health</li>
-      <li>- Added Ping to players</li>
-      <li>- Added Gamemode to players</li>
-      <li>- Fixed Nametags jittering when in the pause menu</li>
-      <li>Added Delay and PopDelay to AutoTotem</li>
-      <li>Fixed $rename adding an extra space to the end of names</li>
-      <li>Split $rpc into top and bottom commands </li>
-      <li>Fixed Notebot highlight being too opaque</li>
-      <li>Updated an outdated notebot error message</li>
-      <li>Added chat output when $rbook is executed successfully</li>
-      <li>Fixed NoSlow inventory moving in writable books</li>
-      <li>Fixed search not removing the blocks when a nether portal is broken (And slightly optimized it)</li>
-      <li>Added Highlight to nuker</li>
-      <li>Moved all logging to Log4j</li>
-      <li>Fixed rare crash when disabling xray</li>
-      <li>Readded that Freecam doesn't cull chunks</li>
-      <li>Fixed crash when using optifabric and fixed Xray on optifabric</li>
-      <li>Made freecam players copy health and potion effects from the real player</li>
-      <li>Improved $dupe description and renamed vanilla mode to old mode</li>
-      <br/>
-      <li>Fixed compatibility with macOS</li>
-      <li>Updated 1.17 version to 21w17a</li>
     </ul>
     <p class="logTitle" style="font-size: 25px;"><a class="logTitle" href="/changelog.html" style="font-size: 25px;">View entire changelog</a></p>
   </div>

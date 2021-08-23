@@ -11,16 +11,16 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/downloads.css">
 
-  <meta name="description" content="The most advanced 1.16/1.17 utility mod designed for anarchy servers.">
+  <meta name="description" content="The most advanced 1.17 utility mod designed for anarchy servers.">
   <meta name="keywords" content="BleachHack, Minecraft, Utility mod, Minecraft utility mod, Bleach hack, Hack client, Minecraft client, Free minecraft mod, Free Cheat, Free Clients, Utility client, Bleach hack client, Bleach client, Bleach utility mod">
 
   <meta property="og:site_name" content="BleachHack - Downloads">
-  <meta property="og:title" content="BleachHack utility mod for Minecraft 1.16/1.17">
-  <meta property="og:url" content="https://bleachhack.github.io/downloads.html">
+  <meta property="og:title" content="BleachHack utility mod for Minecraft 1.17">
+  <meta property="og:url" content="https://bleachhack.org/downloads.html">
   <meta property="og:image" content="https://github.com/bleachhack/bleachhack.github.io/raw/main/static/bh.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:description" content="The most advanced 1.16/1.17 utility mod designed for anarchy servers.">
+  <meta property="og:description" content="The most advanced 1.17 utility mod designed for anarchy servers.">
   <meta name="theme-color" content="#ebafcc">
 </head>
 
@@ -43,6 +43,7 @@
   <div class="download-box">
     <span class="text" id="version-title" style="font-size: 25px;">BleachHack </span>
     <select class="download-select" id="version-select" name="version" onchange="changeVer(this.options[this.selectedIndex].text)">
+      <option value="1.2">1.2</option>
       <option value="1.1">1.1</option>
       <option value="1.0.1">1.0.1</option>
       <option value="1.0">1.0</option>
@@ -98,6 +99,9 @@
 
       resetVerButtons();
       switch (ver) {
+        case "1.2":
+          addVerButton("1", "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2/bleachhack-1.17.1.jar");
+          break;
         case "1.1":
           addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.16.5.jar");
           addVerButton("2", "1.17", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.17.jar");
