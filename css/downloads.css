@@ -1,33 +1,47 @@
 div.download-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   border: 1px solid;
-  border-image-slice: 2;
-  border-image-source: linear-gradient(135deg, #6060c0, #8070a020);
-  width: 70%;
-  max-width: 580px;
+  border-image: linear-gradient(135deg, #6060c0, #8070a020) 2;
+  width: 90%;
+  max-width: 500px;
   margin: auto;
-  padding: 10px 0 15px 0;
+  padding: 10px;
+}
+
+.download-text {
+  font-size: 24px;
+  text-align: left;
+  margin: 0;
+}
+
+.download-link-text {
+  font-size: 24px;
+  text-align: right;
+  margin: 0;
+}
+
+.download-link {
+  color: #adc4ff;
+  transition: 0.25s;
+}
+
+.download-link:hover {
+  color: #7d84ff;
 }
 
 .download-select {
   font: 22px Lexend;
+  text-align: left;
   color: #bbbfdc;
   background-color: #00000030 !important;
 
   border: 1px solid;
-  border-image-slice: 2;
-  border-image-source: linear-gradient(135deg, #6060c0, #8070a060);
+  border-image: linear-gradient(135deg, #6060c0, #8070a060) 2;
 }
 
 .download-select option {
   background-color: #000000d0 !important;
-}
-
-div.beta-download-box {
-  border: 1px solid;
-  border-image-slice: 2;
-  border-image-source: linear-gradient(135deg, #c06060, #8070a020);
-  width: 70%;
-  max-width: 580px;
-  margin: auto;
-  padding: 10px 0 15px 0;
 }

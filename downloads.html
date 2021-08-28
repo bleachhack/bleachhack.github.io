@@ -39,9 +39,10 @@
 
   <h1 class="title"><span style="color: #e4bf47;">Bleach</span><span style="color: #ebafcc;">Hack</span></h1>
 
-  <p class="text" style="line-height: 0; margin-bottom: 34px;">Stable Releases:</p>
-  <div class="download-box">
-    <span class="text" id="version-title" style="font-size: 25px;">BleachHack </span>
+  <p class="text">Downloads:</p>
+
+  <div class="download-box" style="border: none; justify-content: start;">
+    <p class="text download-text" id="version-title">BleachHack &nbsp;</p>
     <select class="download-select" id="version-select" name="version" onchange="changeVer(this.options[this.selectedIndex].text)">
       <option value="1.2">1.2</option>
       <option value="1.1">1.1</option>
@@ -56,38 +57,44 @@
       <option value="B14.1">B14.1</option>
       <option value="B14">B14</option>
     </select>
-
-    <div style="height: 15px;"></div>
-
-    <a class="button" id="button1"></a>
-    <div></div>
-    <a class="button" id="button2" style="margin-top: 12px;"></a>
-    <div></div>
-    <a class="button" id="button3" style="margin-top: 12px;"></a>
-    <div></div>
-    <a class="button" id="button4" style="margin-top: 12px;"></a>
-    <div></div>
-    <a class="button" id="button5" style="margin-top: 12px;"></a>
   </div>
 
-  <div style="height: 83px;"></div>
+  <div id="download-box" class="download-box">
+  </div>
 
-  <p class="text" style="line-height: 0; margin-bottom: 34px;">Beta builds:</p>
-  <div class="beta-download-box">
-    <span class="text" style="font-size: 25px;">BleachHack Beta</span>
-    <div style="height: 15px;"></div>
+  <div style="height: 70px;"></div>
 
-    <a class="button" href="https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.17.1.zip"><i class="fas fa-angle-down fa-fw" style="font-size: 32px;"></i>1.17.1</a>
+  <div class="download-box" style="border: none; justify-content: start;">
+    <p class="text download-text">Development Builds</p>
+  </div>
 
-    <p class="text" style="margin: 25px 0 0 0; font-size: 16px; color: #c06065;">Warning: Unstable builds, expect bugs and unfinished features</p>
-    <a class="text" href="https://github.com/BleachDrinker420/BleachHack/actions" style="margin: 25px 0 0 0; font-size: 16px; color: #d08085">View the latest builds on GitHub</a>
+  <div class="download-box" style="border-image-source: linear-gradient(135deg, #c06060, #8070a020);">
+    <p class="text download-text">BleachHack Dev &nbsp;(1.17.1)</p>
+    <p class="text download-link-text"><a href="https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/master/BleachHack-1.17.1.zip" class="download-link">Download</a></p>
+
+    <div style="margin: auto;">
+      <p class="text" style="margin: 15px 0 0 0; font-size: 16px; color: #c06065;">Warning: Unstable builds, expect bugs and unfinished features</p>
+      <a class="text" href="https://github.com/BleachDrinker420/BleachHack/actions" style="margin: 15px 0 0 0; font-size: 16px; color: #d08085">View the latest builds on GitHub</a>
+    </div>
+  </div>
+
+  <div style="height: 45px;"></div>
+
+  <div class="download-box" style="border: none; justify-content: start;">
+    <p class="text download-text">How to Install:</p>
+    <ol>
+      <li class="text download-text" style="font-size: 16px; margin-bottom: 3px;">Download <a class="download-link" href="https://fabricmc.net/use/">Fabric</a>, look up a tutorial if you don't know how.</li>
+      <li class="text download-text" style="font-size: 16px; margin-bottom: 3px;">Download the version of BleachHack you want.</li>
+      <li class="text download-text" style="font-size: 16px; margin-bottom: 3px;">Put the downloaded jar in your mods folder.</li>
+      <li class="text download-text" style="font-size: 16px; margin-bottom: 3px;">Run the game, if the BleachHack main menu appears it loaded successfully.</li>
+    </ol>
   </div>
 
   <div style="height: 22px;"></div>
 
-  <div class="copyright">
+  <footer class="copyright">
     <p class="text" style="font-size: 17px; height: 0; transform: translateY(-8px);">Copyright © 2021 Bleach | All Rights Reserved.</p>
-  </div>
+  </footer>
 
   <script>
     const selVer = document.getElementById('version-select');
@@ -97,89 +104,79 @@
       //document.getElementById('version-title').innerHTML = "BleachHack ";//"BleachHack " + ver + ":";
       console.log(ver);
 
-      resetVerButtons();
+      cleanBruh();
       switch (ver) {
         case "1.2":
-          addVerButton("1", "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2/bleachhack-1.17.1.jar");
+          addButton(ver, "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2/bleachhack-1.17.1.jar");
           break;
         case "1.1":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.16.5.jar");
-          addVerButton("2", "1.17", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.17.jar");
-          addVerButton("3", "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.17.1.jar");
+          addButton(ver, "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.17.1.jar");
+          addButton(ver, "1.17", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.17.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.1/bleachhack-1.16.5.jar");
           break;
         case "1.0.1":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.16.5.jar");
-          addVerButton("2", "1.17-pre5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.17-pre5.jar");
-          addVerButton("3", "1.17-rc1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.17-rc1.jar");
-          addVerButton("4", "1.17", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.17.jar");
+          addButton(ver, "1.17", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.17.jar");
+          addButton(ver, "1.17-rc1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.17-rc1.jar");
+          addButton(ver, "1.17-pre5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.17-pre5.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0.1/bleachhack-1.16.5.jar");
           break;
         case "1.0":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0/bleachhack-1.16.5.jar");
-          addVerButton("2", "1.17-pre1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0/bleachhack-1.17-pre1.jar");
-          addVerButton("3", "1.17-pre5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0/bleachhack-1.17-pre5.jar");
+          addButton(ver, "1.17-pre5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0/bleachhack-1.17-pre5.jar");
+          addButton(ver, "1.17-pre1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0/bleachhack-1.17-pre1.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.0/bleachhack-1.16.5.jar");
           break;
         case "0.16":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-1.16.5.jar");
-          addVerButton("2", "21w17a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w17a.jar");
-          addVerButton("3", "21w18a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w18a.jar");
+          addButton(ver, "21w18a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w18a.jar");
+          addButton(ver, "21w17a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-21w17a.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.16/BleachHack-1.16.5.jar");
           break;
         case "0.15.3":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-1.16.5.jar");
-          addVerButton("2", "21w14a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w14a.jar");
-          addVerButton("3", "21w15a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w15a.jar");
-          addVerButton("4", "21w16a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w16a.jar");
-          addVerButton("5", "21w17a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w17a.jar");
+          addButton(ver, "21w17a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w17a.jar");
+          addButton(ver, "21w16a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w16a.jar");
+          addButton(ver, "21w15a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w15a.jar");
+          addButton(ver, "21w14a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-21w14a.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.3/BleachHack-1.16.5.jar");
           break;
         case "0.15.2":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-1.16.5.jar");
-          addVerButton("2", "21w13a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w13a.jar");
-          addVerButton("3", "21w14a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w14a.jar");
+          addButton(ver, "21w14a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w14a.jar");
+          addButton(ver, "21w13a", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-21w13a.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.2/BleachHack-0.15.2-1.16.5.jar");
           break;
         case "0.15.1":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.1/BleachHack-0.15.1-1.16.5.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/0.15.1/BleachHack-0.15.1-1.16.5.jar");
           break;
         case "B15":
-          addVerButton("1", "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B15/BleachHack-B15-1.16.5.jar");
+          addButton(ver, "1.16.5", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B15/BleachHack-B15-1.16.5.jar");
           break;
         case "B14.2":
-          addVerButton("1", "1.14.4", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.14.4.jar");
-          addVerButton("2", "1.15.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.15.2.jar");
-          addVerButton("3", "1.16.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.16.2.jar");
+          addButton(ver, "1.16.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.16.2.jar");
+          addButton(ver, "1.15.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.15.2.jar");
+          addButton(ver, "1.14.4", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.2/bleachhack-b14.2-1.14.4.jar");
           break;
         case "B14.1":
-          addVerButton("1", "1.14.4", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.14.4.jar");
-          addVerButton("2", "1.15.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.15.2.jar");
-          addVerButton("3", "1.16.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.1.jar");
-          addVerButton("4", "1.16.2-rc1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.2-rc1.jar");
+          addButton(ver, "1.16.2-rc1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.2-rc1.jar");
+          addButton(ver, "1.16.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.16.1.jar");
+          addButton(ver, "1.15.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.15.2.jar");
+          addButton(ver, "1.14.4", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14.1/bleachhack-1.14.4.jar");
           break;
         case "B14":
-          addVerButton("1", "1.14.4", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.14.4.jar");
-          addVerButton("2", "1.15.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.15.2.jar");
-          addVerButton("3", "1.16.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.1.jar");
-          addVerButton("4", "1.16.2-rc1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.2-rc1.jar");
+          addButton(ver, "1.16.2-rc1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.2-rc1.jar");
+          addButton(ver, "1.16.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.16.1.jar");
+          addButton(ver, "1.15.2", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.15.2.jar");
+          addButton(ver, "1.14.4", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.14.4.jar");
           break;
         default:
-          addVerButton("1", "my website is broken", "https://www.youtube.com/watch?v=XiUZUDZOPog");
+          addButton(ver, "my website is broken", "https://www.youtube.com/watch?v=XiUZUDZOPog");
       }
     }
 
-    function resetVerButtons() {
-      document.getElementById('button1').style.display = "none";
-      document.getElementById('button1').innerHTML = "<i class=\"fas fa-angle-down fa-fw\" style=\"font-size: 32px;\"></i>";
-      document.getElementById('button2').style.display = "none";
-      document.getElementById('button2').innerHTML = "<i class=\"fas fa-angle-down fa-fw\" style=\"font-size: 32px;\"></i>";
-      document.getElementById('button3').style.display = "none";
-      document.getElementById('button3').innerHTML = "<i class=\"fas fa-angle-down fa-fw\" style=\"font-size: 32px;\"></i>";
-      document.getElementById('button4').style.display = "none";
-      document.getElementById('button4').innerHTML = "<i class=\"fas fa-angle-down fa-fw\" style=\"font-size: 32px;\"></i>";
-      document.getElementById('button5').style.display = "none";
-      document.getElementById('button5').innerHTML = "<i class=\"fas fa-angle-down fa-fw\" style=\"font-size: 32px;\"></i>";
+    function cleanBruh() {
+      document.getElementById('download-box').innerText = "";
     }
 
-    function addVerButton(id, text, link) {
-      document.getElementById('button' + id).style.display = "inline-block";
-      document.getElementById('button' + id).innerHTML += text;
-      document.getElementById('button' + id).href = link;
+    function addButton(bhver, mcver, link) {
+      document.getElementById('download-box').innerHTML += "<p class=\"text download-text\">BleachHack " + bhver + " &nbsp;(" + mcver + ")</p>";
+      document.getElementById('download-box').innerHTML += "<p class=\"text download-link-text\"><a href=\" + link + \" class=\"download-link\">Download</a></p>";
     }
   </script>
 </body>
