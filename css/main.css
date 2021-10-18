@@ -17,12 +17,12 @@ body {
 .top-bar {
   width: 100%;
   position: fixed;
-  background-image: linear-gradient(180deg, #6060c050, #6060c050 78%, #6060c000 78%, #6060c000);
+  background-color: #6060c050;
   top: 0;
   left: 0;
   font: 30px Lexend;
   padding-top: 7px;
-  padding-bottom: 22px;
+  padding-bottom: 7px;
 }
 
 .top-bar a {
