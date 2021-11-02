@@ -43,7 +43,8 @@
   <div class="download-box" style="border: none; justify-content: start;">
     <p class="text download-text" id="version-title">BleachHack &nbsp;</p>
     <select class="download-select" id="version-select" name="version" onchange="changeVer(this.options[this.selectedIndex].value)">
-      <option value="1.2.1">1.2.1 &nbsp;(Latest)</option>
+      <option value="1.2.2">1.2.2 &nbsp;(Latest)</option>
+      <option value="1.2.1">1.2.1</option>
       <option value="1.2">1.2</option>
       <option value="1.1">1.1</option>
       <option value="1.0.1">1.0.1</option>
@@ -107,6 +108,9 @@
 
       cleanBruh();
       switch (ver) {
+        case "1.2.1":
+          addButton(ver, "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.2/bleachhack-1.17.1.jar");
+          break;
         case "1.2.1":
           addButton(ver, "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.1/bleachhack-1.17.1.jar");
           break;
