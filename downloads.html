@@ -70,10 +70,10 @@
   </div>
 
   <div class="download-box" style="border-image-source: linear-gradient(135deg, #c06060, #8070a020);">
-    <p class="text download-text">BleachHack Dev &nbsp;(1.17.1)</p>
-    <p class="text download-link-text"><a href="https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/1.17.1/BleachHack.zip" class="download-link">Download</a></p>
     <p class="text download-text">BleachHack Dev &nbsp;(1.18)</p>
-    <p class="text download-link-text"><a href="https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/1.18/BleachHack.zip" class="download-link">Download</a></p>
+    <p class="download-link-container"><a href="https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/1.18/BleachHack.zip" class="icon-download download-link"></a></p>
+    <p class="text download-text">BleachHack Dev &nbsp;(1.17.1)</p>
+    <p class="download-link-container"><a href="https://nightly.link/BleachDrinker420/BleachHack/workflows/gradle/1.17.1/BleachHack.zip" class="icon-download download-link"></a></p>
 
     <div style="margin: auto;">
       <p class="text" style="margin: 15px 0 0 0; font-size: 16px; color: #c06065;">Warning: Unstable builds, expect bugs and unfinished features</p>
@@ -190,7 +190,7 @@
 
     function addButton(bhver, mcver, link) {
       document.getElementById('download-box').innerHTML += "<p class=\"text download-text\">BleachHack " + bhver + " &nbsp;(" + mcver + ")</p>";
-      document.getElementById('download-box').innerHTML += "<p class=\"text download-link-text\"><a href=" + link + " class=\"download-link\">Download</a></p>";
+      document.getElementById('download-box').innerHTML += "<p class=\"download-link-container\"><a href=" + link + " class=\"icon-download download-link\"</a></p>";
     }
   </script>
 </body>

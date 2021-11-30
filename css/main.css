@@ -93,13 +93,13 @@ body {
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
+  text-decoration: none;
   speak: never;
   line-height: 1;
 }
 
 .icon-download:before {
   content: "\e901";
-  vertical-align: -4px;
   padding-left: 1px;
   padding-right: 2px;
 }

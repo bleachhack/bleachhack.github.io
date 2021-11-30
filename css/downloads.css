@@ -17,13 +17,15 @@ div.download-box {
   margin: 0;
 }
 
-.download-link-text {
-  font-size: 24px;
+.download-link-container {
   text-align: right;
   margin: 0;
 }
 
 .download-link {
+  font-size: 34px;
+  line-height: 0;
+  vertical-align: bottom;
   color: #adc4ff;
   transition: 0.25s;
 }
