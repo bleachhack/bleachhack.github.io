@@ -18,14 +18,14 @@ div.download-box {
 }
 
 .download-link-container {
+  font-size: 34px;
+  vertical-align: bottom;
   text-align: right;
+  line-height: 0;
   margin: 0;
 }
 
 .download-link {
-  font-size: 34px;
-  line-height: 0;
-  vertical-align: bottom;
   color: #adc4ff;
   transition: 0.25s;
 }
