@@ -1,6 +1,12 @@
 @font-face {
+  font-family: 'icomoon';
+  src:  url('/static/font/icomoon.woff') format('woff');
+  font-display: block;
+}
+
+@font-face {
   font-family: 'minecraft';
-  src: url('/static/minecraft.woff') format('woff');
+  src: url('/static/font/minecraft.woff') format('woff');
 }
 
 body {
@@ -49,7 +55,7 @@ body {
 }
 
 .title:hover {
-  text-shadow: 0px 0px 12px #aaa;
+  text-shadow: 0 0 12px #aaa;
 }
 
 .text {
@@ -84,7 +90,26 @@ body {
   background-color: #111;
 }
 
-.fa-fw {
-  padding: 0;
-  margin: 0 auto;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  line-height: 1;
+}
+
+.icon-download:before {
+  content: "\e901";
+  vertical-align: -4px;
+  padding-left: 1px;
+  padding-right: 2px;
+}
+.icon-discord:before {
+  content: "\e900";
+  padding-left: 3px;
+  padding-right: 6px;
+}
+.icon-github:before {
+  content: "\eab0";
+  padding-left: 3px;
+  padding-right: 8px;
 }
