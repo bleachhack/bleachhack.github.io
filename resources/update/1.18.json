@@ -4,7 +4,7 @@
   "installer" : {
     "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
     "version" : 2,
-    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.4/bleachhack-1.17.1.jar",
+    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.4/bleachhack-1.18.jar",
     "os" : "Windows"
   },
   "changelog" : [
