@@ -8,8 +8,8 @@
     "os" : "Windows"
   },
   "changelog" : [
-    "§lFixed Optifine compatibility",
-    "§lFixed your modules being able to reset when restarting Minecraft",
+    "Fixed Optifine compatibility",
+    "Fixed your modules being able to reset when restarting Minecraft",
     "Fixed AutoFish if multiple players were fishing next to each other",
     "Fixed Killaura Projectiles not working",
     "Fixed AutoEat not disabling correctly",
