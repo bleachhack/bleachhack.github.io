@@ -42,7 +42,8 @@
   <div class="download-box" style="border: none; justify-content: start;">
     <p class="text download-text" id="version-title">BleachHack &nbsp;</p>
     <select class="download-select" id="version-select" name="version" onchange="changeVer(this.options[this.selectedIndex].value)">
-      <option value="1.2.4">1.2.4 &nbsp;(Latest)</option>
+      <option value="1.2.5">1.2.5 &nbsp;(Latest)</option>
+      <option value="1.2.4">1.2.4</option>
       <option value="1.2.3">1.2.3</option>
       <option value="1.2.2">1.2.2</option>
       <option value="1.2.1">1.2.1</option>
@@ -111,6 +112,10 @@
 
       cleanBruh();
       switch (ver) {
+        case "1.2.5":
+          addButton(ver, "1.18.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.5/bleachhack-1.18.1.jar");
+          addButton(ver, "1.17.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.5/bleachhack-1.17.1.jar");
+          break;
         case "1.2.4":
           addButton(ver, "1.18.1", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.4/bleachhack-1.18.1.jar");
           addButton(ver, "1.18", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.4/bleachhack-1.18.jar");
@@ -186,7 +191,7 @@
           addButton(ver, "1.14.4", "http://redirect.bleachhack.org/serve/sitelinks/?id=640201&url=https://github.com/BleachDrinker420/BleachHack/releases/download/B14/bleachhack-b14-1.14.4.jar");
           break;
         default:
-          addButton(ver, "my website is broken", "https://www.youtube.com/watch?v=XiUZUDZOPog");
+          addButton(ver, "my website is broken", "calculator://0");
       }
     }
 
