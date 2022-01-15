@@ -4,5 +4,5 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.fabricmc</groupId>
   <artifactId>yarn</artifactId>
-  <version>1.6.4+build.202112231748.fixed</version>
+  <version>1.6.4+build.1</version>
 </project>
