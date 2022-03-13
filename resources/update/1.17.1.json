@@ -1,21 +1,33 @@
 {
-  "name": "1.2.5",
-  "version": 39,
+  "name": "1.2.6",
+  "version": 40,
   "installer" : {
     "link" : "https://raw.githubusercontent.com/BleachDrinker420/BH-resources/master/update/installer/installer-1.1.exe",
     "version" : 2,
-    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.5/bleachhack-1.17.1.jar",
+    "url" : "https://github.com/BleachDrinker420/BleachHack/releases/download/1.2.6/bleachhack-1.17.1.jar",
     "os" : "Windows"
   },
   "changelog" : [
-    "Fixed Optifine compatibility",
-    "Fixed your modules being able to reset when restarting Minecraft",
-    "Fixed AutoFish if multiple players were fishing next to each other",
-    "Fixed Killaura Projectiles not working",
-    "Fixed AutoEat not disabling correctly",
-    "Fixed a typo in AutoEat",
-    "Moved Armor stands from StorageESP to ESP and added them to Tracers",
-    "Increased the render limit of Search to 3000",
-    "Removed the bundled Fabric api modules so the jar is now ~150kb smaller"
+    "Added AutoTNT",
+    "Added powder snow to Solidify",
+    "Added HungerCheck to sprint",
+    "Removed AutoIstackDupe & Dispenser32k",
+    "Removed ChunkSize from UI because it caused problems + was unreliable",
+    "Improved Notebot",
+    "- Fixed the play a song cutting off notes and changed the text to \"Preview\" to make it more clear what it does",
+    "- Made Notebot be able to load midi and nbs files",
+    "- Made the notebot gui show the author of the song if it contains it",
+    "- Made the notebot window bigger on smaller displays",
+    "Fixed AutoArmor trying to equip armor when in chests",
+    "Fixed $prefix not working correctly",
+    "Fixed the account manager not loading accounts properly",
+    "Fixed the game crashing when trying to login with a no auth account that doesn't exist",
+    "Fixed a possible crash when editing block settings",
+    "Rewritten Module Manager (should hopefully improve performance)",
+    "Fixed button settings breaking setting saving",
+    "Fixed Microsoft defender false flagging the BH jar as malware?",
+    "$setting now uses setting names instead of indices",
+    "Replaced DiscordRPC with DiscordIPC which doesn't use 500kb of libraries + adds the ability to use spectate/join buttons",
+    "Updated to 1.18.2"
   ]
 }
