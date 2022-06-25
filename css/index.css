@@ -1,15 +1,3 @@
-.download-text {
-  font: 17px Lexend;
-  color: #abafcc;
-  text-shadow: 2px 2px 1px #000000;
-  transition-duration: 0.25s;
-}
-
-.download-text:hover {
-  color: #7b9fcc;
-  font: 17.5px Lexend;
-}
-
 .about-text {
   color: #abafcc;
   text-shadow: 1px 1px 1px #000000;
@@ -39,7 +27,7 @@ div.features ul {
   column-count: 4;
 }
 
-.logTitle {
+.log-title {
   text-align: center;
   font: 38px Lexend;
   line-height: 12px;

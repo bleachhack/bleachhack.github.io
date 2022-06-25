@@ -82,6 +82,18 @@ body {
   color: #cdf8ff;
 }
 
+.link-text {
+  font: 17px Lexend;
+  color: #abafcc;
+  text-shadow: 2px 2px 1px #000000;
+  transition-duration: 0.25s;
+}
+
+.link-text:hover {
+  color: #7b9fcc;
+  font: 17.5px Lexend;
+}
+
 .copyright {
   position: absolute;
   height: 40px;
